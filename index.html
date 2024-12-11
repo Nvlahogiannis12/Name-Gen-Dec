@@ -18,6 +18,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="/imgs/dragon-silouette.jpg">
     </head>
 
     <body>
@@ -27,10 +28,11 @@
         <main>
 <div class="container">
     <!--  Greeting and Instruction -->
-    <div class="text-center mb-4">
+    <div class="text-center mb-4 top">
         <h1>Whats your name?</h1>
         <p>Fill out the form to generate name.</p>
     </div>
+   <!-- <img src="imgs/dragon-silouette.jpg" class="text-center"> -->
 
   <!--First Name input-->
 <form id="nameForm" class="mb-4">
@@ -51,7 +53,7 @@
         <label for="roadType" class="form-label">Choose Road Type</label>
         <select id="roadType" class="form-select">
             <option value="road">Road</option>
-            <option value="street">Road</option>
+            <option value="street">Street</option>
             <option value="ave">Avenue</option>
             <option value="lane">Lane</option>
             <option value="other">Other</option>
@@ -63,15 +65,12 @@
         <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
     </div>
 
-
-   
     <div class="mb-3">
         <label for="customInput" class="form-label">Favorite Animal</label>
         <input type="text" class="form-control" id="customInput" placeholder="Enter your favorite animal">
     </div>
 
     <button type="submit" class="btn btn-primary w-100">Generate Name</button>
-
 
 </form>
 </div>

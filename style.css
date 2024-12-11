@@ -1,0 +1,12 @@
+body{
+    background-image: url('imgs/castle-background.jpg') ;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:white;
+}
+.top {
+    background-color: grey;
+    opacity: 0.5;
+}
