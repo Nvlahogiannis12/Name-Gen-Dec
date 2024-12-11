@@ -5,8 +5,8 @@ body{
     background-repeat:no-repeat;
     background-attachment:fixed;
     color:white;
+    font-family: "Parkinsans", sans-serif;
 }
 .top {
-    background-color: grey;
-    opacity: 0.5;
+    
 }
