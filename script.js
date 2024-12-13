@@ -10,7 +10,6 @@ function genPrefix (firstName){
         return 'Master'
     }
 }
-//gen name with randomizer
 //Generate First Name of Name
 function genFirstName(firstName){
    const firstLetter = firstName.charAt(0).toLowerCase()
@@ -63,11 +62,11 @@ function genSuffix (favoriteAnimal){
 // Master Function to assemble words
 function genFullName (){
     //define variables from input
-    const firstName = document.getElementById('firstName').Value.trim()
-    const lastName = document.getElementById('lastName').Value.trim()
-    const roadType = document.getElementById('roadType').Value
-    const favoriteColor = document.getElementById('favoriteColor').Value.trim()
-    const animal = document.getElementById('animal').Value.trim()
+    const firstName = document.getElementById('firstName').value.trim()
+    const lastName = document.getElementById('lastName').value.trim()
+    const roadType = document.getElementById('roadType').value
+    const favoriteColor = document.getElementById('favoriteColor').value.trim()
+    const animal = document.getElementById('animal').value.trim()
 
     //generate each name part w help function
     const prefix = genPrefix(firstName)
@@ -76,6 +75,19 @@ function genFullName (){
     const newLastName = genLastName(lastName)
     const suffix = genSuffix(animal)
 
-    
+    //functions to captialize words
+    const capitalizedPrefix = toCapitalize(prefix)
+    const capitalizedFirstName = toCapitalize(newFirstName)
+    const capitalizedMiddleName = toCapitalize(middleName)
+    const capitalizedLastName = toCapitalize(newLastName)
 
+    //Name Generated Words
+    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName}`
+
+    document.getElementById('result').textContent = fullName
+}
+//capitalizer
+function toCapitalize(word)
+{
+return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
 }
