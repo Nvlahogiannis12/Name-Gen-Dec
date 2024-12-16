@@ -1,6 +1,3 @@
-
-
-
 //Generating prefix of name
 function genPrefix (firstName){
     if (firstName.length > 4){
@@ -14,18 +11,36 @@ function genPrefix (firstName){
 function genFirstName(firstName){
    const firstLetter = firstName.charAt(0).toLowerCase()
    if (firstLetter === 'a'){
-    return 'Jeff'
-   } else if (firstLetter === 'b'){
-return 'Gary'
+    return 'Aureliontharixian'
+   } else if (firstLetter === 'j'){
+return 'Vorthanyxthilavor'
    }
    else if (firstLetter === 'c'){
-return 'Barry'
+return 'Nyxandralithyra'
    }
-   else if (firstLetter === 'd'){
-return 'Mary'
+   else if (firstLetter === 'm'){
+return 'Zephyrokathandris'
    }
+    else if (firstLetter === 'l'){
+return 'Thaloryxandralion'
+    }
+    else if (firstLetter === 'e'){
+return 'Myrrhanoktalysse'
+    }
+    else if (firstLetter === 's'){
+return 'Kalyndoraxithralon'
+    }
+    else if (firstLetter === 'b'){
+return 'Fyrnelythandrios'
+    }
+    else if (firstLetter === 'r'){
+return 'Xytheronaxdrimor'
+    }
+    else if (firstLetter === 'd'){
+return 'Drakthalyssorvenis'
+    }
    else {
-return 'Harry'
+return 'Zorynthalvyrexian'
    }
 }
 
@@ -82,7 +97,7 @@ function genFullName (){
     const capitalizedLastName = toCapitalize(newLastName)
 
     //Name Generated Words
-    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName}`
+    const fullName = `${capitalizedPrefix} ${capitalizedFirstName} ${capitalizedMiddleName} ${capitalizedLastName} ${suffix}`
 
     document.getElementById('result').textContent = fullName
 }
@@ -91,3 +106,4 @@ function toCapitalize(word)
 {
 return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
 }
+
