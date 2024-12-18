@@ -10,33 +10,33 @@ function genPrefix (firstName){
 //Generate First Name of Name
 function genFirstName(firstName){
    const firstLetter = firstName.charAt(0).toLowerCase()
-   if (firstLetter === 'a'){
+   if (firstLetter === 'a' || firstLetter === 'v'){
     return 'Aureliontharixian'
-   } else if (firstLetter === 'j'){
+   } else if (firstLetter === 'j' || firstLetter ==='t'){
 return 'Vorthanyxthilavor'
    }
-   else if (firstLetter === 'c'){
+   else if (firstLetter === 'c' || firstLetter ==='h'){
 return 'Nyxandralithyra'
    }
-   else if (firstLetter === 'm'){
+   else if (firstLetter === 'm' || firstLetter ==='p'){
 return 'Zephyrokathandris'
    }
-    else if (firstLetter === 'l'){
+    else if (firstLetter === 'l' || firstLetter ==='k'){
 return 'Thaloryxandralion'
     }
-    else if (firstLetter === 'e'){
+    else if (firstLetter === 'e' || firstLetter ==='n'){
 return 'Myrrhanoktalysse'
     }
-    else if (firstLetter === 's'){
+    else if (firstLetter === 's' || firstLetter ==='w'){
 return 'Kalyndoraxithralon'
     }
-    else if (firstLetter === 'b'){
+    else if (firstLetter === 'b' || firstLetter ==='g'){
 return 'Fyrnelythandrios'
     }
-    else if (firstLetter === 'r'){
+    else if (firstLetter === 'r' || firstLetter ==='r'){
 return 'Xytheronaxdrimor'
     }
-    else if (firstLetter === 'd'){
+    else if (firstLetter === 'd' || firstLetter ==='f'){
 return 'Drakthalyssorvenis'
     }
    else {
@@ -47,13 +47,13 @@ return 'Zorynthalvyrexian'
 //Generate middle name
 function genMiddleName (roadType, favoriteColor){
     if (roadType === 'road'){
-        return `${favoriteColor}ridge`
+        return `${favoriteColor}-bringer`
     } else if (roadType === 'street') {
-        return `${favoriteColor}valley`
+        return `${favoriteColor}-crashed`
     } else if (roadType === 'ave') {
-        return `${favoriteColor}woods`
+        return `${favoriteColor}-spirit`
     } else{
-        return `${favoriteColor}rock`
+        return `${favoriteColor}-scarred`
     }
 }
 
@@ -61,11 +61,13 @@ function genMiddleName (roadType, favoriteColor){
 function genLastName(lastName){
     const lastLetter = lastName.charAt(lastName.length-1).toLowerCase()
     if (lastLetter === 'a'){
-        return 'Shadow'
+        return 'Menace'
     } else if (lastLetter === 'e'){
-        return 'Storm'
-    } else{
-        return 'Blaze'
+        return 'Destroyer'
+    } else if (lastLetter === 'i'){
+    return 'Terrorizer'
+    }else{
+        return 'Scourge'
     }
 }
 
